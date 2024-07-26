@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    
+</head>
+<body class="bg-blue-100">
+    <div class="container mx-auto px-4 border-solid border-2 mt-36 rounded-xl w-auto p-6 bg-white lg:ml-72 lg:mr-96 md:ml-16 md:mr-32 sm:ml-8 sm:mr-8 pl-5" >
+        <h1 class="font-medium text-5xl text-start">Generate a <br><span class="text-green-500 pb-4"> random password</span></h1>
+        <div id="display" class=" flex justify-center items-center bg-white p-2  border-solid border-2 w-full sm:w-80 md:w-96 lg:w-80 mt-5">
+            <input type="text" placeholder="password" class="border-none text-2xl outline-none" id="password">
+              <i class="fa-regular fa-copy cursor-pointer" onclick="copyPassword()"></i>
+        </div>
+        <button class="btn px-4 py-2 bg-blue-500 text-white rounded mt-6" onclick="generateRandomPassword()"><i class="fa-solid fa-bolt px-2"></i>Generate Password</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
